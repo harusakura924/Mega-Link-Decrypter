@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Mega Link Decrypter">
+	<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+	<meta name="generator" content="Jekyll v3.8.5">
+	
+	<title>Mega Link Decrypter</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/cover.css" rel="stylesheet">
+	
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/crypto-js.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/mega.js"></script>
+</head>
+
+<body class="text-center">
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		<header class="masthead mb-auto">
+			<div class="inner">
+				<h3 class="masthead-brand">Mega Link Decrypter</h3>
+				<nav class="nav nav-masthead justify-content-center">
+					<a class="nav-link active" href="javascript:void(0);">Home</a>
+					<a class="nav-link" href="javascript:void(0);">About</a>
+				</nav>
+			</div>
+		</header>
+
+		<main role="main" class="inner cover mb-2 mt-2">
+			<h1 class="cover-heading mb-3">Mega Link Decrypter</h1>
+			<p class="lead mb-5">Decipher <mark>mega://(f)enc?</mark> or <mark>mega://(f)enc2?</mark> links</p>
+			<div class="alert alert-danger" role="alert">
+				<span id="error">ERROR TEXT</span>
+				<button type="button" class="close" onclick="$(this).parent('div.alert-danger').hide();">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="form-group text-left">
+				<label for="link">Mega Link:</label>
+				<div class="input-group">
+					<input type="text" class="form-control" id="link" aria-describedby="decrypt" placeholder="Paste link here, and then press enter or click Decrypt">
+					<div class="input-group-append">
+						<button class="btn btn-primary" type="button" id="decrypt">Decrypt</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-group mb-5 text-left">
+				<label for="result">Original URL:</label>
+				<input type="text" class="form-control-plaintext" id="result-input" readonly>
+				<p class="text-truncate">
+					<a href="javascript:void(0);" class="text-decoration-none text-primary" id="result"></a>
+				</p>
+				<span class="badge badge-danger" id="error"></span>
+				<p class="lead text-center">
+					<button type="button" class="btn btn-warning" id="copy">Copy</button>
+					<button type="button" class="btn btn-info" id="clear">Clear</button>
+				</p>
+			</div>
+		</main>
+
+		<footer class="mastfoot mt-auto">
+			<div class="inner">
+				<p>Reference <a href="https://gist.github.com/dinos80152/fa09c00b7befbfce07a7471b042665dc">dinos80152</a> production, using the <a href="https://getbootstrap.com/">Bootstrap4</a> template (by <a href="https://twitter.com/mdo">@mdo</a>)</p>
+			</div>
+		</footer>
+	</div>
+	
+	
+</body>
+
+</html>
